@@ -8,9 +8,11 @@ namespace Farkle
 {
     class DiceState
     {
+        int diceState = 0;
+
         public DiceState()
         {
-
+            diceState = getRandomDiceNumber();
         }
 
         public int getRandomDiceNumber()
@@ -18,6 +20,10 @@ namespace Farkle
             animateDiceRoll();
             Random rand = new Random(System.DateTime.Now.Millisecond);
             return rand.Next(1, 6);
+        }
+        public int getValue()
+        {
+            return diceState;
         }
         public void animateDiceRoll()
         {
