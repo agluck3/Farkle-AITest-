@@ -21,10 +21,6 @@ namespace Farkle
             Random rand = new Random(System.DateTime.Now.Millisecond);
             return rand.Next(1, 6);
         }
-        public int getValue()
-        {
-            return diceState;
-        }
         public void animateDiceRoll()
         {
             return;
