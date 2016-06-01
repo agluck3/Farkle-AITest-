@@ -13,12 +13,17 @@ namespace Farkle
 
         public FarkleScoring(List<DiceState> dStates)
         {
-
             for(int i = 0; i < dStates.Count; i++)
             {
                 diceStates[i] = dStates[i];
             }
+        }
+        public void checkDice()
+        {
+            foreach(DiceState ds in diceStates)
+            {
 
+            }
         }
     }
 }

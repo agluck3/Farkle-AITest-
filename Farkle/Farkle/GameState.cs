@@ -16,6 +16,11 @@ namespace Farkle
         {            
             player.points = 0;
             bot.points = 0;
+            
+        }
+        public void initialRoll()
+        {
+            
         }
         public bool isTerminalState()
         {

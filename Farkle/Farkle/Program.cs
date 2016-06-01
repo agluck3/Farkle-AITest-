@@ -10,6 +10,9 @@ namespace Farkle
     {
         static void Main(string[] args)
         {
+            GameState gs = new GameState();
+
+            gs.initialRoll();
             
         }
     }

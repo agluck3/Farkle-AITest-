@@ -14,11 +14,11 @@ namespace Farkle
         {
         }
 
-        public void rollDice()
+        public int rollDice()
         {
             animateDiceRoll();
             Random rand = new Random(System.DateTime.Now.Millisecond);
-            diceState = rand.Next(1, 6);
+            return rand.Next(1, 6);
         }
         public int getValue()
         {
