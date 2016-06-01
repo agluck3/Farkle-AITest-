@@ -12,7 +12,7 @@ namespace Farkle
 
         public DiceState()
         {
-            rollDice();
+            
         }
 
         public int rollDice()
