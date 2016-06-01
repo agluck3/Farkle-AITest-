@@ -9,5 +9,6 @@ namespace Farkle
     //Bob is a monte carlo AI. 
     class Bob
     {
+
     }
 }

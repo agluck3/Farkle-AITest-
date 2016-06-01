@@ -8,7 +8,7 @@ namespace Farkle
 { 
     class GameState
     {
-        DiceState[] diceStates;
+        List<DiceState> diceStates = new List<DiceState>();
         Player player = new Player();
         Player bot = new Player();
         
@@ -27,7 +27,7 @@ namespace Farkle
         }
         public bool isWinState()
         {
-
+            return true;
         }
     }
 }
