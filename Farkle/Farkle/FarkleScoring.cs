@@ -12,8 +12,7 @@ namespace Farkle
         
 
         public FarkleScoring()
-        {
-            
+        {            
         }
         public void checkDice()
         {
