@@ -10,6 +10,7 @@ namespace Farkle
     {
         public string name { get; set; }
         public int points { get; set; }
+        public int currentPoints { get; set; }
         public bool turnState { get; set; }
         public bool isWinner { get; set; }
     }
