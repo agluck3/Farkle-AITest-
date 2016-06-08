@@ -10,8 +10,19 @@ namespace Farkle
     {
         static void Main(string[] args)
         {
+            //choose first player
+            Console.Write("Please enter your name:");
+            string name = Console.ReadLine();
+            Console.Clear();
+
+            GameState gs = new GameState(name);
             
-            
+
+
+            gs.printBoard();
+
+            Console.Read();
+
         }
     }
 }

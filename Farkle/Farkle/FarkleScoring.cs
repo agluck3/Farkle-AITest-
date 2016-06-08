@@ -9,13 +9,17 @@ namespace Farkle
     class FarkleScoring
     {
         //Handle 6 Dice
-        
+        int points = 0;
 
         public FarkleScoring()
         {            
         }
-        public void checkDice()
+        public int checkDice(List<int> dice)
         {
+
+            
+            return points;
         }
+        
     }
 }

@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bob.cs" />
-    <Compile Include="DiceState.cs" />
     <Compile Include="FarkleScoring.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="Player.cs" />
