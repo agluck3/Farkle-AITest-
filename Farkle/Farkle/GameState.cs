@@ -17,7 +17,7 @@ namespace Farkle
         FarkleScoring farkleScoring = new FarkleScoring();
         //Random with a very strong seed. :3
         Random uRand = new Random(System.DateTime.Now.Millisecond);
-        public int numberOfDice = 0;
+        public int numberOfDice = 6;
 
         
         public GameState(string name)
@@ -131,6 +131,25 @@ namespace Farkle
                 return bot.isWinner = true;
 
             return false;
+        }
+        public void inputMove()
+        {
+            Console.WriteLine("Enter 1 to roll or 2 to not roll");
+            try
+            {
+                int choice = int.Parse(Console.ReadLine());
+                if(choice == 2)
+                {
+                    notRoll();
+                }
+                else if(choice == 1)
+                {
+
+                }
+
+            }
+            catch(FormatException fe) { Console.WriteLine(fe.Message); }
+            catch(Exception ex) { Console.WriteLine(ex.Message); }
         }
         public void animateRoll()
         {

@@ -14,6 +14,8 @@ namespace Farkle
         public FarkleScoring()
         {            
         }
+
+        //Send in the list of kept dice
         public int checkDice(List<int> dice)
         {
 
