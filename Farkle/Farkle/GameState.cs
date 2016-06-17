@@ -34,14 +34,19 @@ namespace Farkle
             chooseFirstPlayer();
             
         }
-        public void roll()
+        public void roll() 
         {
             if (diceValues.Count <= 6)
             {
+                int rollVal = numberOfDice - diceToKeep.Count;
                 animateRoll();
-
-                diceValues.Add(uRand.Next(1, 6));
+                for (int i = 0; i <= rollVal; i++)
+                {
+                    diceValues.Add(uRand.Next(1, 6));
+                }
+                
                 sortList();
+                printBoard();
             }
 
             reviewDice();
@@ -157,7 +162,17 @@ namespace Farkle
         }
         public void printBoard()
         {
+            Console.WriteLine(@"
+___________________________________________________________________________
+|                   ####  ##   ####  #  #  #     #####                    |
+|                   #    #  #  #  #  # #   #     #                        |
+|                   ##   ####  ####  ##    #     ###                      |
+|                   #    #  #  # #   # #   #     #                        |
+|                   #    #  #  #  #  #  #  ####  #####                    |
+|_________________________________________________________________________|
+|                                                                         |
 
+");
         }
     }
 }
